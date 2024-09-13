@@ -86,16 +86,16 @@ TBA
 ### Registration
 
 - Please fill in this [online registration form](https://form.jotform.com/242564578418164)
-- Registration window: Sep 16, 2024 - Dec 1, 2024
+- Registration window: Sep 16, 2024 - Nov 30, 2024
 
   
 ### Important Dates
 
 - Registration Open: Sep 16, 2024
-- Registration Close: Dec 1, 2024
-- Alpha Submission: Jan 12, 2025
-- Beta Submission: Feb, 2, 2025
-- Final Submission: Mar, 1, 2025
+- Registration Close: Nov 30, 2024
+- Alpha Submission Deadline: Jan 6, 2025
+- Beta Submission Deadline: Feb, 2, 2025
+- Final Submission Deadline: Mar, 2, 2025
 - Results Anouncement: March 19, 2025
 
 ### Downloads
