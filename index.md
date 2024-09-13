@@ -1,4 +1,4 @@
-# ISPD25 Contest: GPU/ML-Enhanced Large Scale Global Routing
+# ISPD25 Contest: Performance-Driven Large Scale Global Routing
 
 <img width="1000" alt="profile" src="etc/ispd_logo.png">
 
@@ -43,7 +43,7 @@ Here is an illustrative example of a global routing solution for a net:
 
     (
 
-    {\# $x_l$ $y_l$ $z_1$ $x_h$ $y_h$ $z_2$} 
+    {$x_l$ $y_l$ $z_1$ $x_h$ $y_h$ $z_2$} 
 
     270 13230 M4 270 13230 M5
 
