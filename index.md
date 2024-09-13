@@ -77,42 +77,26 @@ Routing resource limit:
 
 ### Leaderboard
 
-
+TBA
 
 ### Anouncement
-- We released the hidden benchmarks and contest results- March 26, 2024
-- We released the slides for the contest results/summary - March 19, 2024
-- We released the routing resource limit - Feb 2, 2024
-- We released a testcase with around 50M cells and 60M nets! - Jan 29, 2024
-- We evaluated the alpha submissioms on public benchmarks and created the leader board. - Jan 22, 2024
-- We updated the submission guidance. -Jan 8, 2024
-- We updated the benchmark input files. And a new design ("cluster") with around 10 million cells is released. - Jan 4, 2024
-- We postponed the alpha submission date to Jan 12, 2024. - Jan 2, 2024.
-- We updated the global routing solution format and evaluation metrics. Please kinldy check the updated [Introduction of the contest](https://drive.google.com/file/d/1YiDORsgiImMg6vIO6EfwFj4VNg8Hb5k3/view?usp=sharing). - Jan 2, 2024.
-- We released the updated version of evaluation script. - Jan 2, 2024.
-- The evaluation platform is configured with CUDA version 11.7 and driver version 515.00. We have prepared a Dockerfile (https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) that will install deep learning toolkits compatible with the CUDA version on our evaluation platform. Generally, participants are welcome to modify the Dockerfile as necessary, ensuring compatibility with our evaluation platform for utilizing the GPUs on the system. - Dec 02, 2023.
-- We've identified some bugs in our evaluation script (thanks to the participants for bringing them to our attention!). An updated version will be released shortly, addressing these bugs and significantly improving runtime speed. Stay tuned for the latest updates! - Nov 30, 2023.
-- We've released example global routing solutions on Oct 28, 2023.
-- We've released the evaluation scripts on Oct 28, 2023.
-- To simplify the entry process for the competition, we've extracted routing resource information and netlist data from LEF and DEF files and stored them in simplified formats. As a result, participants can tackle the contest challenge as a mathematic optimization problem within the GCell grid graph. - Oct 28, 2023.
-- Registration opens on Sep 13, 2023!
-- Released the first set of benchmarks on Sep 13, 2023
-- Released the docker for environment setup on Sep 13, 2023
+- Registration opens on Sep 16, 2024!
+- Released the contest introduction on Sep 13, 2024
 
 ### Registration
 
 - Please fill in this [online registration form](https://form.jotform.com/232454622032143)
-- Registration window: Sep 16, 2023 - Dec 1, 2023
+- Registration window: Sep 16, 2024 - Dec 1, 2024
 
   
 ### Important Dates
 
-- ~~Registration Open: Sep 13, 2023~~
-- ~~Registration Close: Dec 1, 2023~~
-- Alpha Submission: ~~Jan 5, 2024~~ Jan 12, 2024
-- Beta Submission: Feb, 2, 2024
-- Final Submission: Mar, 1, 2024
-- Results Anouncement: March 15, 2024
+- Registration Open: Sep 16, 2024
+- Registration Close: Dec 1, 2024
+- Alpha Submission: Jan 12, 2025
+- Beta Submission: Feb, 2, 2025
+- Final Submission: Mar, 1, 2025
+- Results Anouncement: March 19, 2025
 
 ### Downloads
 - [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing.pdf) Sep 13, 2025.
