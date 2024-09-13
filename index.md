@@ -85,7 +85,7 @@ TBA
 
 ### Registration
 
-- Please fill in this [online registration form](https://form.jotform.com/232454622032143)
+- Please fill in this [online registration form](https://form.jotform.com/242564578418164)
 - Registration window: Sep 16, 2024 - Dec 1, 2024
 
   
@@ -111,9 +111,8 @@ TBA
 - Email：ispd2024contest@gmail.com
 
 ### Contest Prizes
-- 1st place: $1000 + one NVIDIA GPU of similar value
-- 2nd place: $500 + one NVIDIA GPU of similar value
-- 3rd place: $250 + one NVIDIA GPU of similar value
+
+TBA
 
 ### Sponsor
  - Sponsored by NVIDIA
