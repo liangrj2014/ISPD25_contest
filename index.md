@@ -31,38 +31,33 @@ For each testcase, two sets of input files are provided: industry-standard files
 
 The industry-standard files include DEF, LEF, LIB, and SDC files. The DEF file contains definitions for CORE, ROW, TRACKS, and GCELLGRID, along with placed COMPONENTS and unrouted NETS. Similar to the [ICCAD2019 global routing contest](https://www.iccad-contest.org/2019/problems.html), GCells are specified using the definition from the DEF GCELLGRID section. The LEF file includes MACRO definitions and technology information. The LIB files offer timing and power data for library cells, while the SDC files provide timing constraints. These files serve as the raw input, allowing contestants to perform the most accurate routing resource and performance modeling. 
 
-For each circuit, we also provide a set of simplified input files, which include a routing resource file (with a \texttt{.cap} extension) and a net information file (with a \texttt{.net} extension). The routing resource file follows the same format as used in the ISPD2024 contest, while the net information file is an extended version of the one used in ISPD2024. The routing resource file offers a detailed representation of the GCell grid graph and its available routing resources. The net information file provides the access points for all the pins within each net, along with the pin names and pre-routing stage slack estimates. These slack estimates provide a rough timing view of the circuit and enable contestants to perform net-based timing optimization. For detailed formatting specifications of the routing resource file, please refer to \Cref{sec:cap}. Likewise, for the format specifications of the net information file, please consult \Cref{sec:net}. The simplified input files enable contestants to quickly engage with the contest and facilitate framing global routing challenges as mathematical optimization problems.
+For each circuit, we also provide a set of simplified input files, which include a routing resource file (with a .cap extension) and a net information file (with a .net extension). The routing resource file follows the same format as used in the ISPD2024 contest, while the net information file is an extended version of the one used in ISPD2024. The routing resource file offers a detailed representation of the GCell grid graph and its available routing resources. The net information file provides the access points for all the pins within each net, along with the pin names and pre-routing stage slack estimates. These slack estimates provide a rough timing view of the circuit and enable contestants to perform net-based timing optimization. The simplified input files enable contestants to quickly engage with the contest and facilitate framing global routing challenges as mathematical optimization problems.
 
 The output file conforms to the route segment file format compatible with the OpenROAD physical design flow. This format is similar to the output file format used in the ISPD2024 contest. The primary difference is that the ISPD2024 contest format describes route segments in the GCell coordinate system, whereas the route segment file format describes the route segments in the original layout coordinate system.
 
 Here is an illustrative example of a global routing solution for a net:
 
-\hspace{0.5cm} \textcolor{blue}{\# Net name}
+    # Net name
 
-\hspace{0.5cm} Net0
+    Net0
 
-\hspace{0.5cm} (
+    (
 
-\hspace{0.5cm} \textcolor{blue}{\# $x_l$ $y_l$ $z_1$ $x_h$ $y_h$ $z_2$} 
-% \#\#\# $x_l$ $y_l$ $z_l$ $x_h$ $y_h$ $z_h$ \#\#\#
- 
-% \hspace{0.5cm} 0 0 0 0 0 0
+    {\# $x_l$ $y_l$ $z_1$ $x_h$ $y_h$ $z_2$} 
 
-\hspace{0.5cm} 270 13230 M4 270 13230 M5
+    270 13230 M4 270 13230 M5
 
-\hspace{0.5cm} 270 13230 M5 270 13230 M6
+    270 13230 M5 270 13230 M6
 
-\hspace{0.5cm} 270 13230 M4 810 13230 M4
+    270 13230 M4 810 13230 M4
 
-\hspace{0.5cm} 810 13230 M4 810 13230 M3
+    810 13230 M4 810 13230 M3
 
-\hspace{0.5cm} 810 13230 M2 1350 13230 M2
+    810 13230 M2 1350 13230 M2
 
-\hspace{0.5cm} 1350 13230 M2 1350 13230 M1
+    1350 13230 M2 1350 13230 M1
 
-% \hspace{0.5cm} 3 3 0 3 3 0
-
-\hspace{0.5cm} )\\
+    )
 where each row ($x_l$ $y_l$ $z_1$ $x_h$ $y_h$ $z_2$) describes a segment spanning from $(x_l, y_l, z_1)$ to $(x_h, y_h, z_2)$. For example, "270 13230 M4 810 13230 M4" represents a horizontal line in the routing layer M4. And "270 13230 M4 270 13230 M5" represents a via going from M4 to M5. Notice that the via segments can go from lower layers to upper layers (like in "270 13230 M4 270 13230 M5") or from upper layers to lower layers (like in "810 13230 M4 810 13230 M3").
 
 To be considered valid, a global routing solution for a net must ensure that its wires cover all pins of the net and that the wires collectively form a connected graph. In this graph representation, each wire corresponds to a vertex. An edge exists between two vertices (wires) if they satisfy one of the following conditions: (i) They touch each other on the same metal layer, or (ii) Vias connect them. The resulting graph must be a connected structure. For an overall global routing solution to be deemed valid, it must satisfy the validity criteria for all nets in the circuit. 
