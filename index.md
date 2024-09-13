@@ -14,7 +14,7 @@ In light of the above, we will host another GPU/ML-enhanced large-scale global r
 
 (1) For each testcase, this contest provides two sets of input files: a) industry-standard LEF, DEF, LIB, and SDC files, and b) simplified rerouting resource and net information files. The industry-standard files serve as the raw input, enabling contestants to perform the most accurate modeling of routing resources and performance. The simplified input files offer abstracted routing resource and net connection information, along with pre-routing timing estimates, allowing contestants to quickly engage with the contest.
     
-(2) This contest establishes a global routing performance evaluation flow utilizing OpenROAD~\cite{ajayi2019toward}, a leading open-source chip design toolset. The evaluation flow involves loading a global routing solution into OpenROAD, which then estimates parasitics, timing, power, and routing congestion for the global routing solutions.
+(2) This contest establishes a global routing performance evaluation flow utilizing OpenROAD[OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), a leading open-source chip design toolset. The evaluation flow involves loading a global routing solution into OpenROAD, which then estimates parasitics, timing, power, and routing congestion for the global routing solutions.
 
 (3) This contest encourages participants to release their code under a permissive open-source license, promoting contributions to the open-source community.
 
