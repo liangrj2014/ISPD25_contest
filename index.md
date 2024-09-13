@@ -1,6 +1,6 @@
 # ISPD25 Contest: Performance-Driven Large Scale Global Routing
 
-<img width="1000" alt="profile" src="etc/ispd_header_2025.png">
+<img width="1000" alt="profile" src="etc/ispd_logo_2025.png">
 
 ### Contest Introduction
 
