@@ -20,7 +20,7 @@ In light of the above, we will host another GPU/ML-enhanced large-scale global r
 
 ### Problem Formulation
 
-In global routing, a 3D routing space is defined using global routing cells (GCells), created by a regular grid of horizontal and vertical lines. This configuration results in the formation of a grid graph \( \mathcal{G}(\mathcal{V}, \mathcal{E}) \) where each GCell is treated as a vertex \( (v \in \mathcal{V}) \) and edges \( (e \in \mathcal{E}) \) connect adjacent GCells within the same layer (GCell edges) or between GCells in neighboring layers (via edges). The global router needs to establish a concrete path for each net within the grid graph and optimize the routability, timing and power.
+In global routing, a 3D routing space is defined using global routing cells (GCells), created by a regular grid of horizontal and vertical lines. This configuration results in the formation of a grid graph where each GCell is treated as a vertex and edges connect adjacent GCells within the same layer (GCell edges) or between GCells in neighboring layers (via edges). The global router needs to establish a concrete path for each net within the grid graph and optimize the routability, timing and power.
 
 For each testcase, the global router starts with a placed design,
 and generates a global routing solution. The global routing solution is evaluated by OpenROAD, which reports timing, power, and routing congestion. Additionally, the runtime and memory efficiency of the global router are critical factors.
