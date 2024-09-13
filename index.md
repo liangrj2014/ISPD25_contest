@@ -18,6 +18,13 @@ In light of the above, we will host another GPU/ML-enhanced large-scale global r
 
 (3) This contest encourages participants to release their code under a permissive open-source license, promoting contributions to the open-source community.
 
+### Problem Formulation
+
+In global routing, a 3D routing space is defined using global routing cells (GCells), created by a regular grid of horizontal and vertical lines. This configuration results in the formation of a grid graph \( \mathcal{G}(\mathcal{V}, \mathcal{E}) \) where each GCell is treated as a vertex \( (v \in \mathcal{V}) \) and edges \( (e \in \mathcal{E}) \) connect adjacent GCells within the same layer (GCell edges) or between GCells in neighboring layers (via edges). The global router needs to establish a concrete path for each net within the grid graph and optimize the routability, timing and power.
+
+For each testcase, the global router starts with a placed design,
+and generates a global routing solution. The global routing solution is evaluated by OpenROAD, which reports timing, power, and routing congestion. Additionally, the runtime and memory efficiency of the global router are critical factors.
+
 ### Input/Output Formats and Evaluation
 
 To enable teams from diverse backgrounds to participate, we have extracted routing resource information and netlist data from LEF and DEF files and organized them in simplified formats. Consequently, participants can approach the contest as a mathematical optimization problem within the GCell grid graph. The desired outcome is global routing solutions described within the GCell grid graph. The evaluation process is centered on several key metrics, including total wirelength, via count and routing congestion of the global routing solution, as well as the execution runtime of the global router.
