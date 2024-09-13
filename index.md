@@ -1,4 +1,4 @@
-# ISPD24 Contest: GPU/ML-Enhanced Large Scale Global Routing
+# ISPD25 Contest: GPU/ML-Enhanced Large Scale Global Routing
 
 <img width="1000" alt="profile" src="etc/ispd_logo.png">
 
