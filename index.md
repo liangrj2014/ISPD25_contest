@@ -114,6 +114,10 @@ TBA
 
 TBA
 
+### Organizers
+
+Rongjian Liang, Wen-Hao Liu, Anthony Agnesina and Haoxing Ren from NVIDIA
+
 ### Sponsor
  - Sponsored by NVIDIA
    
