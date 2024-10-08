@@ -95,8 +95,8 @@ TBA
   | 2  | bllnghamton | Binghamton University |
   | 3  | Sai Harika | Arizona State University |
   | 4  | morse | IBM |
-  | 5  | iloveEDA | NYCU |
-  | 6  | Frontier Design Automation | patner |
+  | 5  | iloveEDA | National Yang Ming Chiao Tung University |
+  | 6  | Frontier Design Automation | partner |
   | 7  | Impact Innovators | Cadence |
   | 8  | iitm_router | Indian Institute of Technology Madras |
   
