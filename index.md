@@ -87,7 +87,18 @@ TBA
 
 - Please fill in this [online registration form](https://form.jotform.com/242564578418164)
 - Registration window: Sep 16, 2024 - Nov 30, 2024
-
+- We confirm that we've received the registrations forms from the following teams. Please feel free to send us an email if we overlooked your registration forms or any related information.
+  
+  |  ID   | Team Name  | Affiliation |
+  |  ----  | ----  | ----  |
+  | 1  | Unknown | Unknown |
+  | 2  | bllnghamton | Binghamton University |
+  | 3  | Sai Harika | Arizona State University |
+  | 4  | morse | IBM |
+  | 5  | iloveEDA | NYCU |
+  | 6  | Frontier Design Automation | patner |
+  | 7  | Impact Innovators | Cadence |
+  | 8  | iitm_router | Indian Institute of Technology Madras |
   
 ### Important Dates
 
@@ -99,8 +110,11 @@ TBA
 - Results Anouncement: March 19, 2025
 
 ### Downloads
+- [An example of global routing segment file](https://drive.google.com/file/d/1HXlz7yF6MkJ7EJntViQhiOMfNZrMWgA9/view?usp=sharing) Oct 7, 2025
+- [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link) Oct 7, 2025
+- [Dockerfile for environment setup](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) Updated on Oct 7, 2025.
 - [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing.pdf) Sep 13, 2025.
-- [Dockerfile for environment setup](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) Sep 13, 2025.
+
   
 ### Q&A
 
