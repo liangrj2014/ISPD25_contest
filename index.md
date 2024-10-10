@@ -99,6 +99,7 @@ TBA
   | 6  | Frontier Design Automation | partner |
   | 7  | Impact Innovators | Cadence |
   | 8  | iitm_router | Indian Institute of Technology Madras |
+  | 9  | Team Hippo | Peking University |
   
 ### Important Dates
 
