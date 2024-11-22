@@ -100,6 +100,26 @@ TBA
   | 7  | Impact Innovators | Cadence |
   | 8  | iitm_router | Indian Institute of Technology Madras |
   | 9  | Team Hippo | Peking University |
+  | 10 | NTUGR | National Taiwan University |
+  | 11 | iloveEDA | National Yang Ming Chiao Tung University |
+  | 12 | Zaphod | Unknown |
+  | 13 | MetaEDA | Institute of Science Tokyo |
+  | 14 | metaRoute | Fudan University |
+  | 15 | yzu_router | Yuan Ze University |
+  | 16 | BisonCAD | North Dakota State University |
+  | 17 | Anonymous | Unknown |
+  | 18 | NaiveRoute | University of Science and Technology of China |
+  | 19 | SGDrouter | Texas A&M University |
+  | 20 | sudo rm -rf /* | National Tsinghua University |
+  | 21 | Routing_4-4 | Unknown |
+  | 22 | Routing_team | Unknown |
+  | 23 | NTHU-TCLAB-GR | National Tsinghua University |
+  | 24 | runtu_eda | Unknown |
+  | 25 | SCATOP3 | Institute of Computing Technology, Chinese Academy of Sciences |
+  | 26 | etuReL2 | Fudan University |
+  | 27 | FZU_Routing | Fuzhou University |
+  | 28 | Kachow | National Yang Ming Chiao Tung University |
+  
   
 ### Important Dates
 
