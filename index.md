@@ -110,7 +110,7 @@ TBA
   | 17 | Anonymous | Unknown |
   | 18 | NaiveRoute | University of Science and Technology of China |
   | 19 | SGDrouter | Texas A&M University |
-  | 20 | sudo rm -rf /* | National Tsinghua University |
+  | 20 | ^(*-(oo)-)^ | National Tsinghua University |
   | 21 | Routing_4-4 | Unknown |
   | 22 | Routing_team | Unknown |
   | 23 | NTHU-TCLAB-GR | National Tsinghua University |
@@ -119,6 +119,25 @@ TBA
   | 26 | etuReL2 | Fudan University |
   | 27 | FZU_Routing | Fuzhou University |
   | 28 | Kachow | National Yang Ming Chiao Tung University |
+  | 29 | Swallow of Ambition | Institute of Science Tokyo |
+  | 30 | SEU-Router | Southeast University |
+  | 31 | It's MyRoute!!!!! | Fudan University, Wuhan University and University of California San Diego |
+  | 32 | Dream wings | Fuzhou University |
+  | 33 | NTHU-TCLAB-GR | National Tsinghua University |
+  | 34 | ISMCEDA24 | South China University of Technology |
+  | 35 | GODW Router | Unknown |
+  | 36 | LX Router | Unknown |
+  | 37 | RL-Route | The Chinese University of Hong Kong |
+  | 38 | EDAteam | Unknown |
+  | 39 | Bookworm Captain | Chung Yuan Christian University |
+  | 40 | TeamName(){} | Fuzhou University |
+  | 41 | no-idea | University of California, Berkeley |
+  | 42 | Simprouter | Institute of Science Tokyo |
+  | 43 | ADErouter | National Yang Ming Chiao Tung University |
+  | 44 | FDU Team 3 | Fudan University |
+  | 45 | routing_champs | Indian Institute of Technology Madras |
+  | 46 | mRouter | Unknown |
+  
   
   
 ### Important Dates
@@ -131,10 +150,10 @@ TBA
 - Results Anouncement: March 19, 2025
 
 ### Downloads
-- [An example of global routing segment file](https://drive.google.com/file/d/1HXlz7yF6MkJ7EJntViQhiOMfNZrMWgA9/view?usp=sharing) Oct 7, 2025
-- [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link) Oct 7, 2025
-- [Dockerfile for environment setup](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) Updated on Oct 7, 2025.
-- [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing.pdf) Sep 13, 2025.
+- [An example of global routing segment file](https://drive.google.com/file/d/1HXlz7yF6MkJ7EJntViQhiOMfNZrMWgA9/view?usp=sharing) Oct 7, 2024
+- [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link) Oct 7, 2024
+- [Dockerfile for environment setup](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) Updated on Oct 7, 2024.
+- [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing.pdf) Sep 13, 2024.
 
   
 ### Q&A
