@@ -154,7 +154,7 @@ TBA
 - [An example of global routing segment file](https://drive.google.com/file/d/1HXlz7yF6MkJ7EJntViQhiOMfNZrMWgA9/view?usp=sharing) Oct 7, 2024
 - [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link) Oct 7, 2024
 - [Dockerfile for environment setup](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile) Updated on Oct 7, 2024.
-- [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing.pdf) Sep 13, 2024.
+- [Introduction of the contest](https://github.com/liangrj2014/ISPD25_contest/blob/main/etc/ISPD2025_contest_Performance_Driven_Large_Scale_Global_Routing%20(1).pdf) Sep 13, 2024.
 
   
 ### Q&A
