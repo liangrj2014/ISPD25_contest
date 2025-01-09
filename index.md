@@ -163,7 +163,7 @@ TBA
 
 ### Contact
 
-- Email：ispd2024contest@gmail.com
+- Email：~~ispd2024contest@gmail.com~~(Unfortunately, we lost access to the old email :( ) ispd2025contest@gmail.com
 
 ### Contest Prizes
 
