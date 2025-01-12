@@ -150,6 +150,7 @@ TBA
 - Results Anouncement: March 19, 2025
 
 ### Downloads
+- [Scripts that check the legality of the routing solution and compute the overflow score](https://drive.google.com/drive/u/1/folders/1zbemASyVpi7MttpQ3FtL0bbAyrA2-ock). Jan 12, 2025
 - [Scripts to generate simplified input files from .def/.v files](https://drive.google.com/file/d/1BH5PZd9T3hppD4Fff739Y4vM3TtyoXL4/view?usp=sharing) Please make sure to use [our forked version of OpenROAD](https://github.com/liangrj2014/OpenROAD_ISPD25.git) to generate the simplified input files. The simplified input files are uloaded to [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link). Dec 25, 2024
 - [An example of global routing segment file](https://drive.google.com/file/d/1HXlz7yF6MkJ7EJntViQhiOMfNZrMWgA9/view?usp=sharing) Oct 7, 2024
 - [First set of testcases and example OpenROAD codes to evaluate global routing solutions](https://drive.google.com/drive/folders/12ei9JOKaMeSPgc9CZOWrVyLJRgb0f2is?usp=drive_link) Oct 7, 2024
