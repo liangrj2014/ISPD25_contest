@@ -87,7 +87,7 @@ Notes:
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /workspace/benchmarks and an "evaluation" folder (containing the evaluation scripts) to /workspace/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions.
 
-Please kindly send the name of your Docker image by replying to (Note that please do not use Reply To ALL) this email in the following format (by Jan 15, 2025):
+Please kindly send the name of your Docker image to ispd2025contest@gmail.com in the following format (by Jan 15, 2025):
 
 
 Team ID    Team Name  Docker Image Name
@@ -194,7 +194,7 @@ TBA
 
 ### Contact
 
-- Email：~~ispd2024contest@gmail.com~~(Unfortunately, we lost access to the old email :( ) ispd2025contest@gmail.com
+- Email：~~ispd2024contest@gmail.com~~(Unfortunately, we lost access to the old email address:( ) ispd2025contest@gmail.com
 
 ### Contest Prizes
 
