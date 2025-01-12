@@ -66,12 +66,39 @@ Please check [Introduction of the contest](https://github.com/liangrj2014/ISPD25
 
 ### Submission Guidance
 
-TBA
+Teams are required to build a Docker image on top of the provided [Dockerfile](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile). Within the Docker environment, please create a directory named "router" under the "/workspace" folder and place the global router binary/scripts in this directory (/workspace/router). We expect that the global route can accept the following command line:
+
+
+> ./route -def ${design}.def -v ${design}.v.gz -sdc ${design}.sdc -cap ${design}.cap -net ${design}.net -output ${design}.route
+
+Notes: 
+1) The router is not required to utilize all the provided input files. However, it should be capable of accepting the file names as inputs via the command.
+2) Metal1 should not be used for net routing.
+3) For stacked vias, such as a via from metal1 to metal3 represented by 409500 1614900 metal1 409500 1614900 metal3, the output format should be:
+   "409500 1614900 metal1 409500 1614900 metal2
+    409500 1614900 metal2 409500 1614900 metal3"
+   Please see the reason here: https://github.com/liangrj2014/ISPD25_contest/issues/12
+5) Since the OpenROAD router neither recognizes the GCELLGRID keyword in the DEF file nor supports manually specifying Gcell shapes (it only supports square Gcells), please ignore the GCELLGRID information in DEF files. Instead, use the Gcell definitions provided in the .cap files, which create Gcells with a fixed size of 4200 × 4200.
+6) The alpha submission primarily serves to resolve formatting issues. The weights in the scoring function will be determined empirically based on the solutions from the alpha submissions. Alpha submission scores will be provided to each team for debugging purposes but will not be released publicly.
+
+
+During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /workspace/benchmarks and an "evaluation" folder (containing the evaluation scripts) to /workspace/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions.
+
+Please kindly send the name of your Docker image by replying to (Note that please do not use Reply To ALL) this email in the following format (by Jan 15, 2025):
+
+
+Team ID    Team Name  Docker Image Name
+
+######
+
+
+
+
 
 Routing resource limit:
 - RAM: 200 GB
 - CPU Cores: 8 cores
-- GPUs: TBA
+- GPUs: 1 NVIDIA PG506-230 with 100GB
   
   
 
