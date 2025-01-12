@@ -75,8 +75,11 @@ Notes:
 1) The router is not required to utilize all the provided input files. However, it should be capable of accepting the file names as inputs via the command.
 2) Metal1 should not be used for net routing.
 3) For stacked vias, such as a via from metal1 to metal3 represented by 409500 1614900 metal1 409500 1614900 metal3, the output format should be:
+   
    "409500 1614900 metal1 409500 1614900 metal2
+   
     409500 1614900 metal2 409500 1614900 metal3"
+   
    Please see the reason here: https://github.com/liangrj2014/ISPD25_contest/issues/12
 5) Since the OpenROAD router neither recognizes the GCELLGRID keyword in the DEF file nor supports manually specifying Gcell shapes (it only supports square Gcells), please ignore the GCELLGRID information in DEF files. Instead, use the Gcell definitions provided in the .cap files, which create Gcells with a fixed size of 4200 × 4200.
 6) The alpha submission primarily serves to resolve formatting issues. The weights in the scoring function will be determined empirically based on the solutions from the alpha submissions. Alpha submission scores will be provided to each team for debugging purposes but will not be released publicly.
