@@ -107,7 +107,7 @@ During the evaluation process, the Docker images will be pulled and executed on 
 **Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} beta submission" and submit it by February 5, 2025.**
 
 
-**Team ID      Link to the docker image**
+**TeamID       Link_to_the_Docker_image**
 
 ######
 
