@@ -71,6 +71,8 @@ Teams are required to build a Docker image on top of the provided [Dockerfile](h
 
 > ./route -library ${library folder} -def ${design}.def -v ${design}.v.gz -sdc ${design}.sdc -cap ${design}.cap -net ${design}.net -output ${design}.route
 
+Please kindly check [run_evaluation.sh](https://drive.google.com/file/d/1U9BvXxsjDbewBR1jb6kznb52vui4f5N6/view?usp=drive_link) for details.
+
 Notes: 
 1) The router is not required to utilize all the provided input files. However, it should be capable of accepting the file names as inputs via the command.
 2) Metal1 should not be used for net routing.
