@@ -90,7 +90,11 @@ Notes:
    
    original_score = w1*(WNS -WNS_{ref}) + w2*(TNS - TNS_{ref})/N_{endpoint} + w3*(TotalPower - TotalPower_{ref}) + w4*OverflowScore
    
-   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of valid global routing solutions, and OverflowScore is the congestion cost reported by the evaluator.
+   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator.
+
+ |  Testcase   | w1  | w2 | w3 | w4 | N_{endpoint} |
+  |  ----  | ----  | ----  | ----  | ---- | ---- |
+  | ariane  | 10 | 1000 | 300 | 3e-7 | 20218
 
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
