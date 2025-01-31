@@ -87,7 +87,8 @@ Notes:
 6) The alpha submission primarily serves to resolve formatting issues. The weights in the scoring function will be determined empirically based on the solutions from the alpha submissions. Alpha submission scores will be provided to each team for debugging purposes but will not be released publicly.
 7) **Kindly name your Docker image as {TeamID}:beta, save it as {TeamID}_beta.tar.gz using the docker save command, and upload it to Google Drive. Please ensure the file is accessible to anyone with the link and share the link (please share the link to the Docker image file rather than the link to the folder) with us.**
 8) Evaluation metrics details:
-   original_score = 
+   original_score = w1*(WNS -WNS_{ref}) + w2*(TNS - TNS_{ref})/N_{endpoint} + w3*(TotalPower - TotalPower_{ref}) + w4*OverflowScore
+   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of valid global routing solutions, and OverflowScore is the congestion cost reported by the evaluator.
 
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
