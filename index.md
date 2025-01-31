@@ -94,7 +94,12 @@ Notes:
 
  |  Testcase   | w1  | w2 | w3 | w4 | N_{endpoint} |
   |  ----  | ----  | ----  | ----  | ---- | ---- |
-  | ariane  | 10 | 1000 | 300 | 3e-7 | 20218
+  | ariane  | 10 | 1000 | 300 | 3e-7 | 20218 |
+  | bsg  | 10 | 1000 | 25 | 4e-8 | 214821 |
+  | NVDLA  | 0.05 | 5 | 25 | 1.5e-7 | 45925 |
+  | mempool_tile  | 1 | 100 | 300 | 7e-7 | 13350 |
+  | mempool_group  | 1 | 100 | 20 | 3e-8 | 347869 |
+  | mempool_cluster  | --- | --- | --- | --- | 1082397 |
 
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
