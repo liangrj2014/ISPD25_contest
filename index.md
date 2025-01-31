@@ -83,7 +83,7 @@ Notes:
    Please see the reason here: https://github.com/liangrj2014/ISPD25_contest/issues/12
 5) Since the OpenROAD router neither recognizes the GCELLGRID keyword in the DEF file nor supports manually specifying Gcell shapes (it only supports square Gcells), please ignore the GCELLGRID information in DEF files. Instead, use the Gcell definitions provided in the .cap files, which create Gcells with a fixed size of 4200 × 4200.
 6) The alpha submission primarily serves to resolve formatting issues. The weights in the scoring function will be determined empirically based on the solutions from the alpha submissions. Alpha submission scores will be provided to each team for debugging purposes but will not be released publicly.
-7) **Kindly name your Docker image as {TeamID}:beta, save it as {TeamID}_beta.tar.gz using the docker save command, and upload it to Google Drive. Please ensure the file is accessible to anyone with the link and share the link with us.**
+7) **Kindly name your Docker image as {TeamID}:beta, save it as {TeamID}_beta.tar.gz using the docker save command, and upload it to Google Drive. Please ensure the file is accessible to anyone with the link and share the link (please share the link to the file rather than the link to the folder) with us.**
 
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
@@ -198,7 +198,10 @@ TBA
 
 ### Contest Prizes
 
-TBA
+1st place: $1000 + one NVIDIA GPU of similar value
+2nd place: $500 + one NVIDIA GPU of similar value
+3rd place: $250 + one NVIDIA GPU of similar value
+
 
 ### Organizers
 
