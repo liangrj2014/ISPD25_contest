@@ -91,7 +91,7 @@ Notes:
 
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
-**Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} beta submission" and submit it by February 7, 2025.**
+**Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} beta submission" and submit it by February 5, 2025.**
 
 
 **Team ID      Link to the docker image**
