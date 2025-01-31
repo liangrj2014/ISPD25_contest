@@ -90,7 +90,7 @@ Notes:
    
    original_score = w1*(WNS -WNS_{ref}) + w2*(TNS - TNS_{ref})/N_{endpoint} + w3*(TotalPower - TotalPower_{ref}) + w4*OverflowScore
    
-   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator.
+   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator. Our overall principle is: overflow > timing > power, and runtime efficiency matters :)
 
  |  Testcase (visible)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
   |  ----  | ----  | ----  | ----  | ---- | ---- | ---- |
