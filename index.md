@@ -92,7 +92,7 @@ Notes:
    
    where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the average WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator.
 
- |  Testcase   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
+ |  Testcase (visible)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
   |  ----  | ----  | ----  | ----  | ---- | ---- | ---- |
   | ariane  | 10 | 1000 | 300 | 3e-7 | 20218 | 123900 |
   | bsg  | 10 | 1000 | 25 | 4e-8 | 214821 | 736883 |
