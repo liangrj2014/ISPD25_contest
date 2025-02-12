@@ -130,8 +130,12 @@ Routing resource limit:
 
 ### Leaderboard
 
-| Design | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+Beta submission
+
+| Design | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane | -0.485 | 1398.39 | 0.646 | 9.5 | -0.45 | -1355.39 | 6.46 | 5836484.4516 | 6 | 1.188263567 | 1.172508023 |
+
 
 ### Anouncement
 - Registration opens on Sep 16, 2024!
