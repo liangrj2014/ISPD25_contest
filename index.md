@@ -92,7 +92,7 @@ Notes:
 
    **scaled_score = original_score * (1 + signed_runtime_factor)**
    
-   **T = 0.02*log_2{𝐺𝑅𝑜𝑢𝑡𝑒𝑟_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e/𝑀𝑒𝑑𝑖an_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e}**
+   **T = 0.02*log_{2}(𝐺𝑅𝑜𝑢𝑡𝑒𝑟_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e/𝑀𝑒𝑑𝑖an_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e)**
    
    **signed_runtime_factor = sign(original_score) * min(0.2, max(-0.2, T))**
    
