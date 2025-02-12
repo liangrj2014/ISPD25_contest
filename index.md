@@ -130,7 +130,8 @@ Routing resource limit:
 
 ### Leaderboard
 
-TBA
+| Design | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 
 ### Anouncement
 - Registration opens on Sep 16, 2024!
