@@ -89,8 +89,12 @@ Notes:
 8) Evaluation metrics details:
    
    original_score = w1*(WNS -WNS_{ref}) + w2*(TNS - TNS_{ref})/N_{endpoint} + w3*(TotalPower - TotalPower_{ref}) + w4*OverflowScore
+
+   **scaled_score = original_score * (1 + signed_runtime_factor)**
+   **T = 0.02*log_2{𝐺𝑅𝑜𝑢𝑡𝑒𝑟_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e/𝑀𝑒𝑑𝑖an_𝑊𝑎𝑙𝑙_𝑇𝑖𝑚e}**
+   **signed_runtime_factor = sign(original_score) * min(0.2, max(-0.2, T))**
    
-   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the **medium** WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator. Our overall principle is: overflow > timing > power, and runtime efficiency matters :)
+   where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the **median** WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator. Our overall principle is: overflow > timing > power, and runtime efficiency matters :)
 
  |  Testcase (visible)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
   |  ----  | ----  | ----  | ----  | ---- | ---- | ---- |
