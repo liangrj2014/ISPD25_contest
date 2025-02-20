@@ -98,23 +98,23 @@ Notes:
    
    where WNS_{ref}, TNS_{ref}, and TotalPower_{ref} are the **median** WNS, TNS and total power of submitted global routing solutions, and OverflowScore is the congestion cost reported by the evaluator. Our overall principle is: overflow > timing > power, and runtime efficiency matters :)
 
- |  Testcase (visible)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
-  |  ----  | ----  | ----  | ----  | ---- | ---- | ---- |
-  | ariane  | **-10** | **-100** | 300 | 3e-7 | 20218 | 123900 |
-  | bsg  | **-10** | **-100** | 25 | 4e-8 | 214821 | 736883 |
-  | NVDLA  | **-0.05** | **-0.5** | 25 | 1.5e-7 | 45925 | 199481 |
-  | mempool_tile  | **-1** | **-10** | 300 | 7e-7 | 13350 | 136120 |
-  | mempool_group  | **-1** | **-10** | 20 | 3e-8 | 347869 | 3274611 |
-  | mempool_cluster  | **-1** | **-10** | 0.3 | 5e-9 | 1082397 | 12047279 |
+ |  Testcase (visible)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} | GCell graph dimensions |
+  |  ----  | ----  | ----  | ----  | ---- | ---- | ---- | ---- | 
+  | ariane  | **-10** | **-100** | 300 | 3e-7 | 20218 | 123900 | 10x761x761 |
+  | bsg  | **-10** | **-100** | 25 | 4e-8 | 214821 | 736883 | 10x1384x1384 |
+  | NVDLA  | **-0.05** | **-0.5** | 25 | 1.5e-7 | 45925 | 199481 | 10x1120x1120 |
+  | mempool_tile  | **-1** | **-10** | 300 | 7e-7 | 13350 | 136120 | 10x428x428 |
+  | mempool_group  | **-1** | **-10** | 20 | 3e-8 | 347869 | 3274611 | 10x1611x1610 |
+  | mempool_cluster  | **-1** | **-10** | 0.3 | 5e-9 | 1082397 | 12047279 | 10x3175x3175 |
 
- |  Testcase (blind)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} |
-  |  ----  | ----  | ----  | ----  | ---- | ---- | ---- |
-  | ariane  | -0.2 | -2 | 100 | 0.0000004 | 20218 | 105924 |
-  | bsg  | -0.1 | -1 | 50 | 0.00000002 | 214915 | 768239 |
-  | NVDLA  | -0.01 | -0.1 | 100 | 0.0000001 | 45925 | 157744 |
-  | mempool_tile  | -3 | -30 | 100 | 0.000001 | 13350 | 135814 |
-  | mempool_group  | -0.5 | -5 | 3 | 0.00000004 | 347869 | 3218496 |
-  | mempool_cluster  | -0.4 | -4 | 2 | 0.00000001 | 1082397 | 12168735 |
+ |  Testcase (blind)   | w1  | w2 | w3 | w4 | N_{endpoint} | {N_net} | GCell graph dimensions |
+  |  ----  | ----  | ----  | ----  | ---- | ---- | ---- | ---- | 
+  | ariane  | -0.2 | -2 | 100 | 0.0000004 | 20218 | 105924 | 10x646x646 |
+  | bsg  | -0.1 | -1 | 50 | 0.00000002 | 214915 | 768239 | 10x1384x1384 |
+  | NVDLA  | -0.01 | -0.1 | 100 | 0.0000001 | 45925 | 157744 | 10x1120x1120 |
+  | mempool_tile  | -3 | -30 | 100 | 0.000001 | 13350 | 135814 | 10x386x386 |
+  | mempool_group  | -0.5 | -5 | 3 | 0.00000004 | 347869 | 3218496 | 10x1611x1610 |
+  | mempool_cluster  | -0.4 | -4 | 2 | 0.00000001 | 1082397 | 12168735 | 10x3719x3719 |
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
 **Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} beta submission" and submit it by February 5, 2025.**
