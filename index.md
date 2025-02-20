@@ -216,7 +216,7 @@ Beta submission
 - Registration Close: Nov 30, 2024
 - Alpha Submission Deadline: Jan 12, 2025
 - Beta Submission Deadline: Feb, 2, 2025
-- Final Submission Deadline: Mar, 2, 2025
+- Final Submission Deadline: Mar, 5, 2025
 - Results Anouncement: March 19, 2025
 
 ### Downloads
