@@ -151,7 +151,7 @@ Beta submission
 
 
 
-Note that we only evaluate the beta submissions of a few teams on the hidden testcase. And the below statistics are just for your reference.
+Note that we only evaluated the beta submissions of a few teams on the hidden testcase. And the below statistics are just for your reference.
 | Design (blind) | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 | Ariane | -1.67 | 524.66 | 0.156 | 36 | -0.16 | -524.66 | 0.156 | 4418340 | 36 | 1.721748047 | 1.721748047 |
