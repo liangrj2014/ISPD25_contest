@@ -116,6 +116,8 @@ Notes:
   | mempool_group  | -0.5 | -5 | 3 | 0.00000004 | 347869 | 3218496 | 10x1611x1610 |
   | mempool_cluster  | -0.4 | -4 | 2 | 0.00000001 | 1082397 | 12168735 | 10x3719x3719 |
 
+  **Note that we added the PPA weights to the second line of the cap files so that teams can optimize the scores according to the weights**
+
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
 **Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} final submission" and submit it by March 7, 2025 (AOE).**
 
