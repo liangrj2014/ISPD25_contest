@@ -66,7 +66,7 @@ Please check [Introduction of the contest](https://github.com/liangrj2014/ISPD25
 
 ### Submission Guidance
 
-Teams are required to build a Docker image on top of the provided [Dockerfile](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile). Within the Docker environment, please create a directory named "router" under the **"/app"** folder and place the global router binary/scripts in this directory (**/app/router**). We expect that the global route can accept the following command line:
+Teams are required to build a Docker image on top of the provided [Dockerfile](https://github.com/liangrj2014/ISPD24_contest/blob/main/Dockerfile). Within the Docker environment, please create a directory named "router" under the **"/app"** folder and place the global router binary/scripts in this directory (**/app/router**, rather than **/workspace/app/router**). We expect that the global route can accept the following command line:
 
 
 > ./route -library ${library folder} -def ${design}.def -v ${design}.v.gz -sdc ${design}.sdc -cap ${design}.cap -net ${design}.net -output ${design}.route
@@ -85,7 +85,7 @@ Notes:
    Please see the reason here: https://github.com/liangrj2014/ISPD25_contest/issues/12
 5) Since the OpenROAD router neither recognizes the GCELLGRID keyword in the DEF file nor supports manually specifying Gcell shapes (it only supports square Gcells), please ignore the GCELLGRID information in DEF files. Instead, use the Gcell definitions provided in the .cap files, which create Gcells with a fixed size of 4200 × 4200.
 6) The alpha submission primarily serves to resolve formatting issues. The weights in the scoring function will be determined empirically based on the solutions from the alpha submissions. Alpha submission scores will be provided to each team for debugging purposes but will not be released publicly.
-7) **Kindly name your Docker image as {TeamID}:beta, save it as {TeamID}_beta.tar.gz using the docker save command, and upload it to Google Drive. Please ensure the file is accessible to anyone with the link and share the link (please share the link to the Docker image file rather than the link to the folder) with us.**
+7) **Kindly name your Docker image as {TeamID}:final, save it as {TeamID}_beta.tar.gz using the docker save command, and upload it to Google Drive. Please ensure the file is accessible to anyone with the link and share the link (please share the link to the Docker image file rather than the link to the folder) with us.**
 8) Evaluation metrics details:
    
    original_score = w1*(WNS -WNS_{ref}) + w2*(TNS - TNS_{ref})/N_{endpoint} + w3*(TotalPower - TotalPower_{ref}) + w4*OverflowScore
@@ -117,7 +117,7 @@ Notes:
   | mempool_cluster  | -0.4 | -4 | 2 | 0.00000001 | 1082397 | 12168735 | 10x3719x3719 |
 
 During the evaluation process, the Docker images will be pulled and executed on a NVIDIA platform equipped with NVIDIA GPUs. Specifically, we will mount a "benchmarks" folder (containing the input files) to /app/benchmarks, a "NanGate45" folder (containing a "lib" folder, a "dbs" foler and a "lef" folder) to /app/NanGate45, and an "evaluation" folder (containing the evaluation scripts) to /app/evaluation. The evaluation script will be executed to run the submitted global router and evaluate the generated solutions. 
-**Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} beta submission" and submit it by February 5, 2025.**
+**Kindly send the link to your Docker image to ispd2025contest@gmail.com using the following format. Please set the email subject as "{TeamID} final submission" and submit it by March 7, 2025 (AOE).**
 
 
 **TeamID       Link_to_the_Docker_image**
@@ -139,7 +139,7 @@ Routing resource limit:
 
 Beta submission
 
-| Design | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| Design (visible) | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 | Ariane | -0.485 | 1398.39 | 0.646 | 9.5 | -0.45 | -1355.39 | 0.646 | 5836484.4516 | 6 | 1.188263567 | 1.172508023 |
 | Bsg_chip | -0.44 | -10802.7 | 3.05 | 32.5 | -0.44 | -10719.7 | 3.05 | 38128669.4702 | 26 | 1.48647272 | 1.476901973 |
@@ -147,6 +147,19 @@ Beta submission
 | Mempool_tile | -0.695 | -3590.83 | 0.1455 | 10 | -0.69 | -3580.1 | -0.145 | 1984587.6026 | 29 | 1.226177614 | 1.263847088 |
 | Mempool_group | -0.815 | -41740.2 | 7.82 | 111.5 | -0.34 | -23173.8 | 7.77 | 57209536.75 | 65 | -0.292434493 | -0.296987886 |
 | Mempool_cluster | -0.68 | -79748 | 23.7 | 372.5 | -0.34 | -68724.1 | 23.7 | 240104020.7 | 265 | 0.75867323 | 0.751219295 |
+
+
+
+
+Not that we only evaluate the beta submissions of a few teams on the hidden testcase. And the below statistics are just for your reference.
+| Design (blind) | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane | -1.67 | 524.66 | 0.156 | 36 | -0.16 | -524.66 | 0.156 | 4418340 | 36 | 1.721748047 | 1.721748047 |
+| Bsg_chip | -2.85 | -3582 | 0.305 | 31 | 0 | 0 | 0.305 | 130832985.7308 | 44 | 2.314985367 | 2.338377614 |
+| NVDLA | -50.655 | -194395 | 0.137 | 15.5 | -66.93 | -265240.31 | 0.137 | 14602048.9336 | 20 | 1.777217985 | 1.790288776 |
+| Mempool_tile | -0.59 | -2545.31 | 0.146 | 9 | -0.59 | -2545.31| -0.145 | 1731121.9681 | 9 | 1.631121968 | 1.631121968 |
+| Mempool_group | -0.58974 | -38679.56641 | 8.50774956 | 74 | -0.52224779 | -37333.29297 | 8.48 | 53239999.88 | 58 | 1.978705632 | 1.964796425 | 
+| Mempool_cluster | -0.34325 | -55970.21094 | 24.4876995 | 336 | -0.24935344 | -44483.90625 | 2.4208 | 270405583.1 | 1408 | 2.063907288 | 2.149233929 |
 
 
 ### Anouncement
@@ -216,7 +229,7 @@ Beta submission
 - Registration Close: Nov 30, 2024
 - Alpha Submission Deadline: Jan 12, 2025
 - Beta Submission Deadline: Feb, 2, 2025
-- Final Submission Deadline: Mar, 5, 2025
+- Final Submission Deadline: ~~Mar, 5, 2025~~ Mar, 7, 2025 (Anywhere on earth, and it is a hard deadline)
 - Results Anouncement: March 19, 2025
 
 ### Downloads
