@@ -168,13 +168,15 @@ Note that we only evaluated the beta submissions of a few teams on the hidden te
 
 Final Submissions
 
-Note that the rankings of the teams are based on the results of blind testcase.
+Note that the rankings of the teams are based on the results on blind testcase.
+
+Results on visible testcases:
 
 1st place
 | Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
 | Ariane | -0.432401|-1325.782227 |6.46E-01 | 5846460.692| 7|
-| Bsg_chip | | | | | |
+| Bsg_chip | -0.4201518|-10366.19336 | 3.05441332| 21332547.19|29 |
 | NVDLA | | | | | |
 | Mempool_tile | | | | | |
 | Mempool_group | | | | | |
@@ -184,7 +186,7 @@ Note that the rankings of the teams are based on the results of blind testcase.
 | Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
 | Ariane |-0.39832926 |-1340.189453 | 6.46E-01| 5902618.739| 7|
-| Bsg_chip | | | | | |
+| Bsg_chip |-0.42405224 | -10774.87207| 3.05300736| 20468992.4856| 22|
 | NVDLA | | | | | |
 | Mempool_tile | | | | | |
 | Mempool_group | | | | | |
@@ -194,11 +196,13 @@ Note that the rankings of the teams are based on the results of blind testcase.
 | Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
 | Ariane |-0.38071746 |-1138.369019 |6.46E-01 | 8003814.629| 18|
-| Bsg_chip | | | | | |
+| Bsg_chip |-0.40696481 | -9344.333008|3.05345058 |25412296.28 | 42|
 | NVDLA | | | | | |
 | Mempool_tile | | | | | |
 | Mempool_group | | | | | |
 | Mempool_cluster | | | | | |
+
+Results on blind testcases:
 
 ### Anouncement
 - Registration opens on Sep 16, 2024!
