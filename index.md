@@ -206,17 +206,17 @@ Results on blind testcases:
 1st place
 | Design (blind) | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
-| Ariane | | | | | | | | | | | |
-| Bsg_chip | | | | | | | | | | | |
-| NVDLA | | | | | | | | | | | |
-| Mempool_tile | | | | | | | | | | | |
-| Mempool_group | | | | | | | | | | | |
-| Mempool_cluster | | | | | | | | | | | |
+| Ariane |-1.628424105 | -523.0376587| 0.15612001| 19 | -1.75610375| -650.1010742| 0.156143963| 4349151.569| 10| 1.780161242| 1.747192677|
+| Bsg_chip | 0| 0| 0.304779679| 21656927.89| | | | | | | |
+| NVDLA | 0| 0| 0.13628386| 14281178.56| | | | | | | |
+| Mempool_tile | -0.48325035| -1920.723755| 0.144852504| 2122543.077| | | | | | | |
+| Mempool_group | -0.67990416| -40487.88281| 8.54667377| 50934910.6| | | | | | | |
+| Mempool_cluster | -0.289977835| -53248.99805| 24.26071835| 236560368.8| | | | | | | |
 
 2nd place
 | Design (blind) | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Ariane | | | | | | | |
+| Ariane | -0.73648113| -149.5187683| 0.156133637| 4651055.702| 12| 1.646447292| 1.624616553|
 | Bsg_chip | | | | | | | |
 | NVDLA | | | | | | | |
 | Mempool_tile | | | | | | | |
@@ -226,7 +226,7 @@ Results on blind testcases:
 3rd place
 | Design (blind) | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Ariane | | | | | | | |
+| Ariane | -0.63291508| -162.3764648| 0.156107366| 4386728.17| 24| 1.518647876| 1.528884625|
 | Bsg_chip | | | | | | | |
 | NVDLA | | | | | | | |
 | Mempool_tile | | | | | | | |
