@@ -167,11 +167,33 @@ Note that we only evaluated the beta submissions of a few teams on the hidden te
 
 
 Final Submissions
+
 Note that the rankings of the teams are based on the results of blind testcase.
 
+1st place
 | Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
 | ---- | ---- | ---- | ---- | ---- | ---- | 
-| Ariane | | | | | |
+| Ariane | -0.432401|-1325.782227 |6.46E-01 | 5846460.692| 7|
+| Bsg_chip | | | | | |
+| NVDLA | | | | | |
+| Mempool_tile | | | | | |
+| Mempool_group | | | | | |
+| Mempool_cluster | | | | | |
+
+2nd place
+| Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
+| ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane |-0.39832926 |-1340.189453 | 6.46E-01| 5902618.739| 7|
+| Bsg_chip | | | | | |
+| NVDLA | | | | | |
+| Mempool_tile | | | | | |
+| Mempool_group | | | | | |
+| Mempool_cluster | | | | | |
+
+3rd place
+| Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
+| ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane |-0.38071746 |-1138.369019 |6.46E-01 | 8003814.629| 18|
 | Bsg_chip | | | | | |
 | NVDLA | | | | | |
 | Mempool_tile | | | | | |
