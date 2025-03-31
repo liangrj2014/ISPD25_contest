@@ -166,6 +166,18 @@ Note that we only evaluated the beta submissions of a few teams on the hidden te
 | Mempool_cluster | -0.34325 | -55970.21094 | 24.4876995 | 336 | -0.24935344 | -44483.90625 | 2.4208 | 270405583.1 | 1408 | 2.063907288 | 2.149233929 |
 
 
+Final Submissions
+Note that the rankings of the teams are based on the results of blind testcase.
+
+| Design (visible) | WNS | TNS | Total_power | Congestion | runtime | 
+| ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane | | | | | |
+| Bsg_chip | | | | | |
+| NVDLA | | | | | |
+| Mempool_tile | | | | | |
+| Mempool_group | | | | | |
+| Mempool_cluster | | | | | |
+
 ### Anouncement
 - Registration opens on Sep 16, 2024!
 - Released the contest introduction on Sep 13, 2024
