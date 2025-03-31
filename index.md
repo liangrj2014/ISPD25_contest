@@ -168,7 +168,7 @@ Note that we only evaluated the beta submissions of a few teams on the hidden te
 
 Final Submissions
 
-Note that the rankings of the teams are based on the results on blind testcase.
+Note that the rankings of the teams are based on the results on blind testcases.
 
 Results on visible testcases:
 
@@ -203,6 +203,36 @@ Results on visible testcases:
 | Mempool_cluster | -0.27623194| -59533.47266| 23.2199707| 289712328.3253| 726|
 
 Results on blind testcases:
+1st place
+| Design (blind) | WNS_{ref} | TNS_{ref} | Total_power_{ref} | Median_wall_time/s | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
+| Ariane | | | | | | | | | | | |
+| Bsg_chip | | | | | | | | | | | |
+| NVDLA | | | | | | | | | | | |
+| Mempool_tile | | | | | | | | | | | |
+| Mempool_group | | | | | | | | | | | |
+| Mempool_cluster | | | | | | | | | | | |
+
+2nd place
+| Design (blind) | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Ariane | | | | | | | |
+| Bsg_chip | | | | | | | |
+| NVDLA | | | | | | | |
+| Mempool_tile | | | | | | | |
+| Mempool_group | | | | | | | |
+| Mempool_cluster | | | | | | | |
+
+3rd place
+| Design (blind) | WNS | TNS | Total_power | Congestion | runtime | Original_score | Scaled_score |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| Ariane | | | | | | | |
+| Bsg_chip | | | | | | | |
+| NVDLA | | | | | | | |
+| Mempool_tile | | | | | | | |
+| Mempool_group | | | | | | | |
+| Mempool_cluster | | | | | | | |
+
 
 ### Anouncement
 - Registration opens on Sep 16, 2024!
